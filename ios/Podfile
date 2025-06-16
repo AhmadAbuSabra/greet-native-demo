@@ -2,9 +2,10 @@ platform :ios, '12.0'
 
 require File.join(File.dirname(`node --print "require.resolve('expo/package.json')"`), "scripts/autolinking")
 
-target 'greet-native-demo' do
+target 'GreetNativeDemo' do
   use_frameworks!
 
+  # Add Greet SDK
   pod 'GreetSolutions', :git => 'https://github.com/Xyberfocus/GreetSolutionsSDKiOS.git'
 
   use_expo_modules!
