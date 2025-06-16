@@ -1,0 +1,24 @@
+{
+  "cli": {
+    "version": ">= 6.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": true,
+        "node": "18.0.0",
+        "image": "latest"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "ios": {
+        "simulator": false,
+        "image": "latest"
+      }
+    }
+  }
+}
